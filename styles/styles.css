@@ -4,20 +4,24 @@ html {
 }
 
 body {
-    margin: 1.5rem;
+    margin: 0;
+}
+
+section {
+    padding: 1.5rem;
 }
 
 
 /* General font styling */
 @font-face {
     font-family: Yrsa;
-    src: url(assets/fonts/Yrsa/Yrsa-VariableFont_wght.ttf) format('ttf');
+    src: url(assets/fonts/Yrsa/Yrsa-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: Economica;
-    src:    url(/assets/fonts/Economica/Economica-Regular.ttf) format('ttf'),
-            url(/assets/fonts/Economica/Economica-Bold.ttf) format('ttf');
+    src:    url(/assets/fonts/Economica/Economica-Regular.ttf),
+            url(/assets/fonts/Economica/Economica-Bold.ttf);
 }
 
 body {
@@ -33,6 +37,8 @@ h1, h2, h3, h4, h5, h6 {
 body > header {
     display: flex;
     justify-content: space-between;
+    padding: 1.5rem;
+    border-bottom: 1px solid #F3F3F6;
 }
 
 body > header .menu-left {
@@ -44,4 +50,10 @@ body > header .menu-left {
 body > header .menu-left .menu-items {
     display: flex;
     gap: 3rem;
+}
+
+body > header .menu-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
