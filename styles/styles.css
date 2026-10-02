@@ -1,9 +1,9 @@
-/* General styles */
+/* General styles - Remedies */
 html {
   box-sizing: border-box;
 }
 
-body {
+* {
     margin: 0;
 }
 
