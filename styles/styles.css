@@ -40,6 +40,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Economica", serif;
 }
 
+a {
+    text-decoration: unset;
+}
+
 
 /* Header styling */
 body > header {
@@ -64,4 +68,22 @@ body > header .menu-right {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+}
+
+
+/* Breadcrumbs general */
+ul.breadcrumbs {
+    list-style-type: "";
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+ul.breadcrumbs * {
+    font-size: var(--body-font-size);
+    color: #1D194E;
+}
+
+ul.breadcrumbs li:last-child {
+    font-weight: 700;
 }
