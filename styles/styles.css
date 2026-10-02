@@ -24,6 +24,14 @@ section {
             url(/assets/fonts/Economica/Economica-Bold.ttf);
 }
 
+:root {
+    --body-font-size: 1rem;
+    --body-font-size-m: clamp(1rem, 0.5208vw + 0.8958rem, 1.3125rem);
+    --body-font-size-l: clamp(1rem, 0.7292vw + 0.8542rem, 1.4375rem);
+    --heading-font-size: clamp(1.5rem, 1.6667vw + 1.1667rem, 2.5rem);
+    --heading-font-size-l: clamp(1.75rem, 2.0833vw + 1.3333rem, 3rem);
+}
+
 body {
     font-family: "Yrsa", serif;
 }
