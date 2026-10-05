@@ -1,6 +1,7 @@
 /* General styles - Remedies */
 html {
     box-sizing: border-box;
+    overflow: clip;
 }
 
 * {
@@ -110,15 +111,16 @@ ul.breadcrumbs {
 .page-navigation {
     display: flex;
     gap: 2rem;
-    white-space: nowrap;
     flex-direction: row;
 
     div {
         display: flex;
         flex-direction: column;
-        max-width: fit-content;
         align-items: center;
         gap: 1rem;
+        max-width: 15rem;
+        width: 100%;
+        aspect-ratio: 1/1;
     }
 
     img {
@@ -126,5 +128,9 @@ ul.breadcrumbs {
         height: 7rem;
         background-color: red;
         border-radius: 50%;
+    }
+
+    p {
+        text-align: center;
     }
 }
