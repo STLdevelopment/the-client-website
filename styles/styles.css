@@ -134,3 +134,13 @@ ul.breadcrumbs {
         text-align: center;
     }
 }
+
+
+/* Tekenmethodes sections */
+section[class^="tekenmethodes-section-1"] {
+    h2 {
+        background-color: #4FBBC2;
+        color: white;
+        padding: 12px 20px;
+    }
+}
