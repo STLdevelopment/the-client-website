@@ -5,7 +5,7 @@ html {
 }
 
 * {
-    margin: 0;
+    margin: unset;
 }
 
 section {
@@ -37,7 +37,12 @@ body {
     font-family: "Yrsa", serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Economica", serif;
 }
 
@@ -142,5 +147,48 @@ section[class^="tekenmethodes-section-1"] {
         background-color: #4FBBC2;
         color: white;
         padding: 12px 20px;
+    }
+
+    iframe {
+        margin: 2rem 0;
+    }
+
+    .masonry {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+
+    .masonry-item:nth-child(12n - 5) {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .masonry-item:nth-child(12n - 4) {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+
+    .masonry-item:nth-child(12n - 3) {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+
+    .masonry-item:nth-child(12n - 2) {
+        grid-column: span 2 / span 2;
+        grid-row-start: 4;
+    }
+
+    .masonry-item:nth-child(12n - 1) {
+        grid-column-start: 3;
+        grid-row-start: 4;
+    }
+
+    .masonry-item:nth-child(12n) {
+        grid-column-start: 4;
+        grid-row-start: 4;
     }
 }
