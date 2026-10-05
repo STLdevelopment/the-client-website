@@ -94,12 +94,13 @@ ul.breadcrumbs {
 }
 
 .tekenmethodes-hero form {
+    position: relative;
     margin: 1.5rem 0;
 
     input#tekenmethodes-search {
         display: block;
         width: 100%;
-        padding: 14px 20px;
+        padding: 14px 20px 14px calc(1rem + 20px + .76rem);
         border: 1px solid #F3F3F6;
     }
 
@@ -109,4 +110,10 @@ ul.breadcrumbs {
         top: 50%;
         transform: translatey(-50%);
     }
+}
+
+.page-navigation {
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
 }
