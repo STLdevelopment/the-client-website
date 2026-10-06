@@ -177,6 +177,12 @@ section[class^="tekenmethodes-section-1"] {
 
     .masonry-item:nth-child(12n - 2) {
         grid-column: span 2 / span 2;
+        background-color: #4FBBC2;
+        color: white;
+        display: grid;
+        place-content: center;
+        padding: 0 4rem;
+        text-align: center;
     }
 
     .masonry-item:nth-child(12n - 1) {
@@ -185,5 +191,10 @@ section[class^="tekenmethodes-section-1"] {
 
     .masonry-item:nth-child(12n) {
         grid-column-start: 4;
+    }
+
+    .masonry-item img {
+        width: 100%;
+        border: 1px solid #4FBBC2;
     }
 }
