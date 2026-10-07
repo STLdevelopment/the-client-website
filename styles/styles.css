@@ -31,6 +31,8 @@ section {
     --body-font-size-l: clamp(1rem, 0.7292vw + 0.8542rem, 1.4375rem);
     --heading-font-size: clamp(1.5rem, 1.6667vw + 1.1667rem, 2.5rem);
     --heading-font-size-l: clamp(1.75rem, 2.0833vw + 1.3333rem, 3rem);
+
+    
 }
 
 body {
@@ -143,7 +145,8 @@ ul.breadcrumbs {
 
 
 /* Tekenmethodes sections */
-section[class^="tekenmethodes-section-1"] {
+section[class^="tekenmethodes-section"] {
+
     h2 {
         background-color: #4FBBC2;
         color: white;
