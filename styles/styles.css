@@ -16,13 +16,12 @@ section {
 /* General font styling */
 @font-face {
     font-family: 'Yrsa';
-    src: url(assets/fonts/Yrsa/Yrsa-VariableFont_wght.ttf) format('truetype');
+    src:    url('/assets/fonts/Yrsa/Yrsa-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Economica';
-    src: url(assets/fonts/Economica/Economica-Regular.ttf) format('truetype'),
-        url(assets/fonts/Economica/Economica-Bold.ttf) format('truetype');
+    src: url('/assets/fonts/Economica/Economica-Regular.ttf') format('truetype');
 }
 
 :root {
