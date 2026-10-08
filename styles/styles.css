@@ -16,8 +16,8 @@ section {
 /* General font styling */
 @font-face {
     font-family: 'Yrsa';
-    src:    url('/assets/fonts/yrsa.woff2') format('woff2'),
-            url('/assets/fonts/yrsa.woff') format('woff');
+    src:    url('../assets/fonts/yrsa.woff2') format('woff2'),
+            url('../assets/fonts/yrsa.woff') format('woff');
 }
 
 @font-face {
@@ -37,6 +37,7 @@ section {
 
 body {
     font-family: "Yrsa", serif;
+    font-weight: 400;
 }
 
 h1,
