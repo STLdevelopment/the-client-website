@@ -32,7 +32,38 @@ section {
     --heading-font-size: clamp(1.5rem, 1.6667vw + 1.1667rem, 2.5rem);
     --heading-font-size-l: clamp(1.75rem, 2.0833vw + 1.3333rem, 3rem);
 
-    
+    --primary-color: hsl(40 99.1% 55.7%);
+    --primary-color-dark: hsl(39 90.9% 42.9%);
+
+    --secondary-color: hsl(244 24% 35.1%);
+    --secondary-color-dark: hsl(245 51.5% 20.2%);
+    --secondary-color-dark-50: hsla(245 51.5% 20.2% / 0.5);
+    --secondary-color-dark-25: hsla(245 51.5% 20.2% / 0.25);
+    --secondary-color-dark-10: hsla(245 51.5% 20.2% / 0.1);
+
+    --steunkleur-cyan: hsl(184 98.8% 32.9%);
+    --steunkleur-cyan-light: hsl(184 48.5% 53.5%);
+    --steunkleur-cyan-light-50: hsl(184 48.5% 53.5% / 0.5);
+
+    --steunkleur-oranje: hsl(13 69.8% 48%);
+    --steunkleur-oranje-light: hsl(10 93.4% 64.3%);
+    --steunkleur-oranje-light-50: hsl(10 93.4% 64.3% / .5);
+
+    --steunkleur-paars: hsl(292 24% 51%);
+    --steunkleur-paars-light: hsl(292 24.2% 64.3%);
+    --steunkleur-paars-light-50: hsl(292 24.2% 64.3% / .5);
+
+    --steunkleur-groen: hsl(64 100% 29.6%);
+    --steunkleur-groen-light: hsl(63 42.1% 50.6%);
+    --steunkleur-groen-light-50: hsl(63 42.1% 50.6% / .5);
+
+    --steunkleur-rood: hsl(333 100% 29.6%);
+    --steunkleur-rood-light: hsl(349 55.6% 47.6%);
+    --steunkleur-rood-light-50: hsl(349 55.6% 47.6% / .5);
+
+    --steunkleur-blauw: hsl(197 100% 22.7%);
+    --steunkleur-blauw-light: hsl(202 53.5% 39.6%);
+    --steunkleur-blauw-light-50: hsl(202 53.5% 39.6% / .5);
 }
 
 body {
