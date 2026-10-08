@@ -16,7 +16,8 @@ section {
 /* General font styling */
 @font-face {
     font-family: 'Yrsa';
-    src:    url('/assets/fonts/Yrsa/Yrsa-VariableFont_wght.ttf') format('truetype');
+    src:    url('/assets/fonts/yrsa.woff2') format('woff2'),
+            url('/assets/fonts/yrsa.woff') format('woff');
 }
 
 @font-face {
