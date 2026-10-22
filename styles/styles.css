@@ -1,23 +1,8 @@
-/* General styles - Remedies */
-html {
-    box-sizing: border-box;
-    overflow-x: clip;
-}
-
-* {
-    margin: unset;
-}
-
-section {
-    padding: 1.5rem;
-}
-
-
-/* General font styling */
+/* General styles */
 @font-face {
     font-family: 'Yrsa';
-    src:    url('../assets/fonts/yrsa.woff2') format('woff2'),
-            url('../assets/fonts/yrsa.woff') format('woff');
+    src: url('../assets/fonts/yrsa.woff2') format('woff2'),
+        url('../assets/fonts/yrsa.woff') format('woff');
 }
 
 @font-face {
@@ -37,6 +22,7 @@ section {
 
     --secondary-color: hsl(244 24% 35.1%);
     --secondary-color-dark: hsl(245 51.5% 20.2%);
+    /* Body text color */
     --secondary-color-dark-50: hsla(245 51.5% 20.2% / 0.5);
     --secondary-color-dark-25: hsla(245 51.5% 20.2% / 0.25);
     --secondary-color-dark-10: hsla(245 51.5% 20.2% / 0.1);
@@ -66,6 +52,28 @@ section {
     --steunkleur-blauw-light-50: hsl(202 53.5% 39.6% / .5);
 }
 
+html {
+    box-sizing: border-box;
+    overflow-x: clip;
+}
+
+* {
+    padding: unset;
+    margin: unset;
+}
+
+main {
+    padding: 0 20px;
+}
+
+section {
+    max-width: 1300px;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+}
+
+
+/* General font styling */
 body {
     font-family: "Yrsa", serif;
     font-weight: 400;
@@ -194,12 +202,14 @@ section[class^="tekenmethodes-section"] {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
         grid-auto-flow: dense;
-        gap: 1.5rem;
+        gap: 2rem;
 
-        .masonry-item {
+        .masonry-item:not(.textfield) {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: .75rem;
+            color: var(--secondary-color-dark);
+            font-weight: 900;
 
             dt {
                 flex-grow: 2;
@@ -209,6 +219,26 @@ section[class^="tekenmethodes-section"] {
                     border: 1px solid #4FBBC2;
                     height: 100%;
                 }
+            }
+
+            dd {
+                font-size: 1.25rem;
+            }
+        }
+
+        .masonry-item.textfield {
+            background-color: #4FBBC2;
+            color: white;
+            display: grid;
+            place-content: center;
+            text-align: center;
+            padding: 3rem 4rem;
+
+            dt {
+                font-size: 1.5rem;
+                font-weight: 900;
+                color: #FFF;
+                text-wrap: balance;
             }
         }
     }
@@ -228,14 +258,13 @@ section[class^="tekenmethodes-section"] {
     grid-column-start: 3;
 }
 
-.masonry-item:nth-child(12n - 2) {
+.masonry-item:nth-child(24n - 14) {
     grid-column: span 2 / span 2;
-    background-color: #4FBBC2;
-    color: white;
-    display: grid;
-    place-content: center;
-    padding: 0 4rem;
-    text-align: center;
+}
+
+.masonry-item:nth-child(24n - 2) {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
 }
 
 .masonry-item:nth-child(12n - 1) {
@@ -244,4 +273,46 @@ section[class^="tekenmethodes-section"] {
 
 .masonry-item:nth-child(12n) {
     grid-column-start: 4;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color-dark);
+    padding: 3rem 20px;
+
+    >nav {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr repeat(4, 1fr);
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            >a {
+                display: flex;
+
+                img {
+                    min-width: 10rem;
+                }
+            }
+
+            ul {
+                display: flex;
+                gap: 1rem;
+
+                a {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    ul {
+        list-style-type: "";
+    }
 }
